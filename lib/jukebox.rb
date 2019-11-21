@@ -36,16 +36,16 @@ def run
   
   case input
   
-  when "help"
+  when 'help'
     help 
     
-  when "play" 
+  when 'play'
     play(songs) 
     
-  when "list" 
+  when'list' 
     list(songs)
     
-  when "exit" 
+  when 'exit' 
     exit_jukebox
   end 
 end 
