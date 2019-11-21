@@ -22,7 +22,8 @@ def play(songs)
    end
  end
 
-def list 
+def list(songs) 
+  song.each_with_index |key, value|
   
 end
 
