@@ -12,20 +12,16 @@ end
 
 def play(songs)
   puts "Please enter a song name or number:"
-  user_response = gets.strip 
-  song_name = songs 
-  index = 0  
-
-  while index < songs.length do 
-    if user_response == song_name[index]
-      puts "Playing #{song_name}"
-    else 
-      puts "Invalid input, please try again"
-      user_response
+  selection = gets.chomp
+  songs.each.with_index do |title, index|
+  track = "#{index+1}"
+  if selection == title || selection == track
+    puts "Playing #{title}"
+  else
+    puts "Invalid input, please try again"
     end
-    index += 1 
   end
-end 
+end
 
 def list 
   
