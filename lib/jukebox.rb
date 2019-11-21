@@ -45,7 +45,7 @@ def run
   when input == "list" 
     list 
     
-  when input == "exit" 
+  else input == "exit" 
     exit_jukebox
   end 
 end 
