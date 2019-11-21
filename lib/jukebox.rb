@@ -21,8 +21,8 @@ def play(songs)
       puts "Invalid input, please try again"
       user_response
     end
+    
   end
-  index += 1 
 end 
 
 def list 
