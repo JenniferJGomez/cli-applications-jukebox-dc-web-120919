@@ -36,7 +36,7 @@ def run
 
     case input
       when "exit"
-        exit_jukeboxs
+        exit_jukebox
       when "help"
         help
       when "list"
