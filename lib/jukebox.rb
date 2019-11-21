@@ -40,10 +40,13 @@ def run
         
       when "help"
         help
+        
       when "list"
         list(songs)
+        
       when "play"
         play(songs)
+        
       else
         puts "Invalid Command"
         input
