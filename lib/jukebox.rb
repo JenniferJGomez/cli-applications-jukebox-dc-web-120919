@@ -12,13 +12,14 @@ end
 
 def play(songs)
   puts "Please enter a song name or number:"
-  selection = gets.chomp
-  songs.each.with_index do |title, index|
-  track = "#{index+1}"
-  if selection == title || selection == track
-    puts "Playing #{title}"
-  else
-    puts "Invalid input, please try again"
+  puts "Please enter a song name:"
+  user_choice = gets.chomp
+  my_songs.each do |key, value|
+    if user_choice == key
+      system 'open <file path>'
+      user_choice == [key][value]
+    else
+      puts "Invalid input, please try again"
     end
   end
 end
