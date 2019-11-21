@@ -36,6 +36,12 @@ def run
   
   case run_method
   
-  when 
+  when help 
+    help 
+    
+  when play 
+    play 
+    
+  when
   
 end 
