@@ -45,5 +45,6 @@ def run
         play(songs)
       else
         puts "Invalid Command"
+        input
     end
 end
