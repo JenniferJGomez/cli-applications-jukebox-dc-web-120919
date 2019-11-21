@@ -53,4 +53,5 @@ def run
         "Invalid input"
     end
   end 
+  exit
 end 
