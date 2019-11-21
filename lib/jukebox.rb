@@ -40,12 +40,12 @@ def run
     help 
     
   when input == "play" 
-    play 
+    play(songs) 
     
   when input == "list" 
-    list 
+    list(songs)
     
-  else input == "exit" 
+  when input == "exit" 
     exit_jukebox
   end 
 end 
