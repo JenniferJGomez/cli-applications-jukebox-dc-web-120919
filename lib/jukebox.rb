@@ -24,7 +24,7 @@ def play(songs)
 
 def list(songs) 
   songs.each_with_index do |k, v|
-    puts "#{k}" + "#{v}"
+    puts "#{k}" + "#{v}" + "/n"
   end 
 end
 
