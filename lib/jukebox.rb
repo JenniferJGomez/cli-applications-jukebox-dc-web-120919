@@ -53,5 +53,5 @@ def run
         "Invalid input"
     end
   end 
-  exit
+  exit_jukebox
 end 
