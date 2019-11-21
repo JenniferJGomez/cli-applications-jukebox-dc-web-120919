@@ -36,12 +36,16 @@ def run
   
   case run_method
   
-  when help 
+  when input == "help"
     help 
     
-  when play 
+  when input == "play" 
     play 
     
-  when
-  
+  when input == "list" 
+    list 
+    
+  when input == "exit" 
+    exit_jukebox
+  end 
 end 
