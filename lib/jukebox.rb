@@ -49,5 +49,6 @@ def run
     exit_jukebox
     
   else 
+    'Invalid input'
   end 
 end 
