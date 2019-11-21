@@ -20,6 +20,7 @@ def play(songs)
     else 
       puts "Invalid input, please try again"
       user_response
+    end
   end
   index += 1 
 end 
