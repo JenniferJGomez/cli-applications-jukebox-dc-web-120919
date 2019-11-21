@@ -19,6 +19,7 @@ def play(songs)
       puts "Playing #{song_name}"
     else 
       puts "Invalid input, please try again"
+      user_response
   end
   index += 1 
 end 
