@@ -32,26 +32,24 @@ end
 
 def run
   puts "Please enter a command:"
-  input = gets.strip 
-  
-  while input != "exit"
-    case input
-  
-      when "help"
-        help 
-    
-      when "play"
-        play(songs) 
-    
-      when "list"
-        list(songs)
-    
-      when "exit" 
-        exit_jukebox
-    
-      else 
-        "Invalid input"
-    end
-  end 
-  exit_jukebox
-end 
+  user_input = gets.chomp
+
+    while user_input = gets.chomp
+        case user_input
+            when "help"
+                help
+            when "list"
+                list(songs)
+                user_input = gets.chomp
+            when "play"
+                play(songs)
+                user_input = gets.chomp
+            when "exit"
+                exit_jukebox
+                break
+            else
+                "Invalid input, please try again"
+                print prompt
+            end
+        end
+end
