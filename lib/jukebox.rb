@@ -11,13 +11,16 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   user_response = gets.strip 
-  
+  song_name = songs 
   index = 1 
   
   while index < songs.length do 
-  
+    if user_response == song_name[index]
+      puts "Playing #{song_name}"
+    else 
+      puts "Invalid input, please try again"
   end
-
+  index += 1 
 end 
 
 def list 
