@@ -23,11 +23,8 @@ def play(songs)
  end
 
 def list(songs) 
-  binding.pry
-  songs.each_with_index do |k, v|
-    puts "#{k}" + "#{v}" + "\n"
-    
-  end 
+
+  
 end
 
 def exit_jukebox
