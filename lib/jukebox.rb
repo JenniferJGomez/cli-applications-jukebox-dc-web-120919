@@ -15,7 +15,7 @@ def play(songs)
   user_response = gets.strip 
   song_name = songs 
   index = 0  
-  binding.pry
+
   while index < songs.length do 
     if user_response == song_name[index]
       puts "Playing #{song_name}"
